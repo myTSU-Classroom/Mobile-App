@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RegisterGradeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_enter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Complete Your Details"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_need"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Specifiy your details."
+        android:textColor="@color/greyDark"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_enter" />
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Grade"
+        android:textColor="@color/greyText"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_need" />
+
+    <RadioButton
+        android:id="@+id/rb_1"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_grade"
+        app:layout_constraintStart_toEndOf="@+id/tv_grade"
+        app:layout_constraintTop_toTopOf="@+id/tv_grade" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="1"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/greyText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_1"
+        app:layout_constraintStart_toEndOf="@+id/rb_1"
+        app:layout_constraintTop_toTopOf="@+id/rb_1" />
+
+    <RadioButton
+        android:id="@+id/rb_2"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_1"
+        app:layout_constraintStart_toEndOf="@+id/tv_1"
+        app:layout_constraintTop_toTopOf="@+id/tv_1" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="2"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/greyText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_2"
+        app:layout_constraintStart_toEndOf="@+id/rb_2"
+        app:layout_constraintTop_toTopOf="@+id/rb_2" />
+
+    <RadioButton
+        android:id="@+id/rb_3"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_2"
+        app:layout_constraintStart_toEndOf="@+id/tv_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_2" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="3"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/greyText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_3"
+        app:layout_constraintStart_toEndOf="@+id/rb_3"
+        app:layout_constraintTop_toTopOf="@+id/rb_3" />
+
+    <RadioButton
+        android:id="@+id/rb_4"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_3"
+        app:layout_constraintStart_toEndOf="@+id/tv_3"
+        app:layout_constraintTop_toTopOf="@+id/tv_3" />
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="4"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/greyText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_4"
+        app:layout_constraintStart_toEndOf="@+id/rb_4"
+        app:layout_constraintTop_toTopOf="@+id/rb_4" />
+    
+    <Spinner
+        android:id="@+id/s_faculty"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_text"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:hint="Faculty"
+        android:textColor="@color/black"
+        android:textColorHint="@color/greyText"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_grade"
+        />
+
+    <Spinner
+        android:id="@+id/s_discipline"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_text"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Discipline"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/greyText"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/s_faculty" />
+
+    <Spinner
+        android:id="@+id/s_group"
+        android:layout_width="126dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/custom_text"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Discipline"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/greyText"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/s_faculty" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="46dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Next"
+        android:textColor="@color/blueButton"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_group" />
+
+    <ImageView
+        android:id="@+id/iv_arrow_next"
+        android:layout_width="13dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/baseline_arrow_forward_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_next"
+        app:layout_constraintStart_toEndOf="@+id/tv_next"
+        app:layout_constraintTop_toTopOf="@+id/tv_next" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="46dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Back"
+        android:textColor="@color/blueButton"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_discipline" />
+
+    <ImageView
+        android:id="@+id/iv_arrow_back"
+        android:layout_width="13dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_back"
+        app:layout_constraintEnd_toStartOf="@+id/tv_back"
+        app:layout_constraintTop_toTopOf="@+id/tv_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
