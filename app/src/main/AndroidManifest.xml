@@ -19,11 +19,8 @@
             android:exported="false" />
         <activity
             android:name=".LoginRegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
             android:exported="false"
-            android:label="@string/title_activity_login" />
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
