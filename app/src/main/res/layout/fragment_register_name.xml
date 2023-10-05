@@ -3,46 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".RegisterNameFragment">
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="46dp"
+    tools:context=".view.register.RegisterNameFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/tv_enter"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/montserrat_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_900"
         android:text="Enter Your Name"
-        android:textColor="@color/black"
+        android:textColor="@color/greyText"
         android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_need"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
-        android:fontFamily="@font/montserrat_medium"
+        android:fontFamily="@font/montserrat_500"
         android:text="We need to know more about you."
         android:textColor="@color/greyDark"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_enter" />
 
     <TextView
         android:id="@+id/tv_name"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/montserrat_700"
         android:text="Name"
-        android:textColor="@color/black"
+        android:textColor="@color/greyText"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_need" />
 
@@ -50,47 +47,51 @@
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
         android:background="@drawable/custom_text"
-        android:fontFamily="@font/montserrat_medium"
+        android:fontFamily="@font/montserrat_500"
         android:hint="Name"
         android:paddingStart="20dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="20dp"
-        android:paddingBottom="10dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/greyText"
+        android:paddingVertical="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/greyText"
+        android:textColorHint="@color/greyPlaceholder"
         android:textIsSelectable="false"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
-    <TextView
-        android:id="@+id/tv_next"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="46dp"
-        android:fontFamily="@font/montserrat_medium"
-        android:text="Next"
-        android:textColor="@color/blueButton"
-        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+        app:layout_constraintVertical_bias="1">
 
-    <ImageView
-        android:id="@+id/iv_arrow_next"
-        android:layout_width="13dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="10dp"
-        android:src="@drawable/baseline_arrow_forward_24"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_next"
-        app:layout_constraintStart_toEndOf="@+id/tv_next"
-        app:layout_constraintTop_toTopOf="@+id/tv_next" />
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/montserrat_500"
+            android:text="Next"
+            android:textColor="@color/blueButton"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_arrow_next"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_arrow_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
