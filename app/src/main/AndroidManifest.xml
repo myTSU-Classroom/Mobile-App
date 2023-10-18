@@ -12,9 +12,6 @@
         android:theme="@style/Theme.MyTsuClassroom"
         tools:targetApi="31">
         <activity
-            android:name=".NavigationActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.adminpage.AdministrationActivity"
             android:exported="false" />
         <activity

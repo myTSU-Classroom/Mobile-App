@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyTsuClassroom</string>
+    <string name="app_name">MyTSU Classroom</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
