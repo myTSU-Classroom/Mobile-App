@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_navigation"
+    app:startDestination="@id/registerNameFragment">
+
+    <fragment
+        android:id="@+id/registerNameFragment"
+        android:name="com.example.mytsuclassroom.view.register.RegisterNameFragment"
+        android:label="fragment_register_name"
+        tools:layout="@layout/fragment_register_name">
+        <action
+            android:id="@+id/action_registerNameFragment_to_registerBirthFragment"
+            app:destination="@id/registerBirthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerBirthFragment"
+        android:name="com.example.mytsuclassroom.view.register.RegisterBirthFragment"
+        android:label="fragment_register_birth"
+        tools:layout="@layout/fragment_register_birth">
+        <action
+            android:id="@+id/action_registerBirthFragment_to_registerEmailFragment"
+            app:destination="@id/registerEmailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerEmailFragment"
+        android:name="com.example.mytsuclassroom.view.register.RegisterEmailFragment"
+        android:label="fragment_register_email"
+        tools:layout="@layout/fragment_register_email">
+        <action
+            android:id="@+id/action_registerEmailFragment_to_registerPhoneFragment"
+            app:destination="@id/registerPhoneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerPhoneFragment"
+        android:name="com.example.mytsuclassroom.view.register.RegisterPhoneFragment"
+        android:label="fragment_register_phone"
+        tools:layout="@layout/fragment_register_phone">
+        <action
+            android:id="@+id/action_registerPhoneFragment_to_registerGalleryFragment"
+            app:destination="@id/registerGalleryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerGalleryFragment"
+        android:name="com.example.mytsuclassroom.view.register.RegisterGalleryFragment"
+        android:label="fragment_register_gallery"
+        tools:layout="@layout/fragment_register_gallery">
+        <action
+            android:id="@+id/action_registerGalleryFragment_to_registerSelectFragment"
+            app:destination="@id/registerSelectFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerSelectFragment"
+        android:name="com.example.mytsuclassroom.view.register.RegisterSelectFragment"
+        android:label="fragment_register_select"
+        tools:layout="@layout/fragment_register_select">
+        <action
+            android:id="@+id/action_registerSelectFragment_to_registerGradeFragment"
+            app:destination="@id/registerGradeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerGradeFragment"
+        android:name="com.example.mytsuclassroom.view.register.RegisterGradeFragment"
+        android:label="fragment_register_grade"
+        tools:layout="@layout/fragment_register_grade">
+        <action
+            android:id="@+id/action_registerGradeFragment_to_registerConfirmFragment"
+            app:destination="@id/registerConfirmFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerConfirmFragment"
+        android:name="com.example.mytsuclassroom.view.register.RegisterConfirmFragment"
+        android:label="fragment_register_confirm"
+        tools:layout="@layout/fragment_register_confirm" />
+
+</navigation>
