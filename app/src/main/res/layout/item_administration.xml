@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/gray"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/montserrat_600"
             android:text="972005"/>
     </androidx.cardview.widget.CardView>
     <ImageView
