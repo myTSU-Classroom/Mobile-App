@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddNewEducationDirectionFragment">
+
+    <TextView
+        android:id="@+id/tv_add_new_education_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Education Direction"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/ic_blue_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_blue_line_long"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_new_education_direction" />
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/x_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="27dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_education_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education Direction"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ic_blue_line"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="23dp"/>
+
+    <EditText
+        android:id="@+id/et_input_education_direction_name"
+        android:hint="Education Direction Name"
+        android:textColorHint="@color/greyContainer"
+        android:paddingStart="10dp"
+        android:fontFamily="@font/montserrat_500"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:layout_height="26dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_education_direction"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/button_container"/>
+
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Groups"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_input_education_direction_name"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_input_group_number"
+        android:hint="Group Number"
+        android:textColorHint="@color/greyContainer"
+        android:paddingStart="10dp"
+        android:fontFamily="@font/montserrat_500"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:layout_height="26dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_group"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/button_container"/>
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="49dp"
+        android:layout_height="28dp"
+        android:text="Save"
+        android:fontFamily="@font/montserrat_500"
+        android:textSize="12sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/save_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_no"/>
+
+    <TextView
+        android:id="@+id/btn_no"
+        android:layout_width="49dp"
+        android:layout_height="28dp"
+        android:text="No"
+        android:fontFamily="@font/montserrat_500"
+        android:textSize="12sp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_no_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="27dp"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox_group"
+        app:layout_constraintTop_toBottomOf="@id/et_input_group_number"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="28dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
