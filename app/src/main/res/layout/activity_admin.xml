@@ -10,7 +10,7 @@
         android:id="@+id/tv_myTsuClassroom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/montserrat_900"
         android:text="MyTsu Classroom"
         android:textSize="16sp"
         android:textColor="@color/gray"

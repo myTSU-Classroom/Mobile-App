@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_education_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="Education Direction 1"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_group_1"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="972005"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        app:layout_constraintTop_toBottomOf="@id/tv_education_direction"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_group_2"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="972005"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        app:layout_constraintTop_toBottomOf="@id/tv_group_1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_group_3"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="972005"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        app:layout_constraintTop_toBottomOf="@id/tv_education_direction"
+        app:layout_constraintStart_toEndOf="@id/tv_group_1"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_group_4"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="972005"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        app:layout_constraintTop_toBottomOf="@id/tv_group_3"
+        app:layout_constraintStart_toEndOf="@id/tv_group_1"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_group_5"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="972005"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        app:layout_constraintTop_toBottomOf="@id/tv_education_direction"
+        app:layout_constraintStart_toEndOf="@id/tv_group_3"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_group_6"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="972005"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        app:layout_constraintTop_toBottomOf="@id/tv_group_5"
+        app:layout_constraintStart_toEndOf="@id/tv_group_4"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_group_7"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="972005"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        app:layout_constraintTop_toBottomOf="@id/tv_education_direction"
+        app:layout_constraintStart_toEndOf="@id/tv_group_5"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_group_8"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="972005"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_500"
+        app:layout_constraintTop_toBottomOf="@id/tv_group_7"
+        app:layout_constraintStart_toEndOf="@id/tv_group_6"
+        android:layout_marginStart="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/bx_edit"
+        app:layout_constraintEnd_toStartOf="@id/delete_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="5dp"
+        />
+    <ImageView
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/delete_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

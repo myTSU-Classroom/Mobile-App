@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewDiscipline">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/tv_add_new_discipline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserrat_700"
+            android:text="Add New Discipline"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ic_blue_line"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_blue_line_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_add_new_discipline" />
+
+        <TextView
+            android:id="@+id/tv_discipline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/montserrat_700"
+            android:text="Discipline"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ic_blue_line" />
+
+        <EditText
+            android:id="@+id/et_input_discipline_name"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/button_container"
+            android:fontFamily="@font/montserrat_500"
+            android:hint="Discipline Name"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/greyContainer"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_discipline" />
+
+        <ImageView
+            android:id="@+id/iv_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_bold"
+            app:layout_constraintStart_toStartOf="@id/text_format_bar"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_italic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_italic"
+            app:layout_constraintStart_toEndOf="@id/iv_bold"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_underline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_underline"
+            app:layout_constraintStart_toEndOf="@id/iv_italic"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_text"
+            app:layout_constraintStart_toEndOf="@id/iv_underline"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_text_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_text_right"
+            app:layout_constraintStart_toEndOf="@id/iv_text"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_text_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_text_center"
+            app:layout_constraintStart_toEndOf="@id/iv_text_right"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_list"
+            app:layout_constraintStart_toEndOf="@id/iv_text_center"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_list_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_num_list"
+            app:layout_constraintStart_toEndOf="@id/iv_list"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_tint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_tint"
+            app:layout_constraintStart_toEndOf="@id/iv_list_num"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+        <ImageView
+            android:id="@+id/iv_text_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_size"
+            app:layout_constraintStart_toEndOf="@id/iv_tint"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar" />
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserrat_700"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_input_discipline_name" />
+
+        <ImageView
+            android:id="@+id/text_format_bar"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/description_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="0dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/description_container_reverse"
+            android:fontFamily="@font/montserrat_500"
+            android:hint="Enter Description Here"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/greyContainer"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_format_bar" />
+
+        <TextView
+            android:id="@+id/tv_readings_and_literature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_700"
+            android:text="Readings and Literature"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_description" />
+
+        <ImageView
+            android:id="@+id/text_format_bar_2"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/description_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_readings_and_literature" />
+
+        <EditText
+            android:id="@+id/et_readings_and_literature"
+            android:layout_width="0dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/description_container_reverse"
+            android:fontFamily="@font/montserrat_500"
+            android:hint="Enter Readings and Literature Here"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/greyContainer"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_bold_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_bold"
+            app:layout_constraintStart_toStartOf="@id/text_format_bar_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_italic_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_italic"
+            app:layout_constraintStart_toEndOf="@id/iv_bold_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_underline_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_underline"
+            app:layout_constraintStart_toEndOf="@id/iv_italic_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_text_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_text"
+            app:layout_constraintStart_toEndOf="@id/iv_underline_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_text_right_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_text_right"
+            app:layout_constraintStart_toEndOf="@id/iv_text_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_text_center_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_text_center"
+            app:layout_constraintStart_toEndOf="@id/iv_text_right_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_list_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_list"
+            app:layout_constraintStart_toEndOf="@id/iv_text_center_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_list_num_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_num_list"
+            app:layout_constraintStart_toEndOf="@id/iv_list_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_tint_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_tint"
+            app:layout_constraintStart_toEndOf="@id/iv_list_num_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <ImageView
+            android:id="@+id/iv_text_size_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_size"
+            app:layout_constraintStart_toEndOf="@id/iv_tint_2"
+            app:layout_constraintTop_toTopOf="@id/text_format_bar_2" />
+
+        <TextView
+            android:id="@+id/tv_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_700"
+            android:text="Teacher"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_readings_and_literature" />
+
+        <EditText
+            android:id="@+id/et_choose_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/button_container"
+            android:fontFamily="@font/montserrat_500"
+            android:hint="Choose Teacher"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/greyContainer"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_teacher" />
+
+        <Spinner
+            android:id="@+id/spinner_choose_teacher"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/chevron_down"
+            app:layout_constraintEnd_toEndOf="@id/et_choose_teacher"
+            app:layout_constraintTop_toTopOf="@id/et_choose_teacher" />
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_700"
+            android:text="Year"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_choose_teacher" />
+
+        <EditText
+            android:id="@+id/et_choose_year"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/button_container"
+            android:fontFamily="@font/montserrat_500"
+            android:hint="Choose Year"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/greyContainer"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_year" />
+
+        <Spinner
+            android:id="@+id/spinner_choose_year"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/chevron_down"
+            app:layout_constraintEnd_toEndOf="@id/et_choose_year"
+            app:layout_constraintTop_toTopOf="@id/et_choose_year" />
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_700"
+            android:text="Grade"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_choose_year" />
+
+        <EditText
+            android:id="@+id/et_choose_grade"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/button_container"
+            android:fontFamily="@font/montserrat_500"
+            android:hint="Choose Grade"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/greyContainer"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_grade" />
+
+        <Spinner
+            android:id="@+id/spinner_choose_grade"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/chevron_down"
+            app:layout_constraintEnd_toEndOf="@id/et_choose_grade"
+            app:layout_constraintTop_toTopOf="@id/et_choose_grade" />
+
+        <TextView
+            android:id="@+id/tv_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/montserrat_700"
+            android:text="Schedule"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_choose_grade" />
+
+        <ImageView
+            android:id="@+id/btn_online_class"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/button_container"
+            app:layout_constraintTop_toBottomOf="@id/tv_schedule"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_online_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Online Class"
+            app:layout_constraintStart_toEndOf="@id/btn_online_class"
+            app:layout_constraintTop_toBottomOf="@id/tv_schedule"
+            android:layout_marginTop="14dp"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/greyContainer"/>
+
+        <ImageView
+            android:id="@+id/btn_offline_class"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/button_container"
+            app:layout_constraintTop_toBottomOf="@id/btn_online_class"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_offline_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Offline Class"
+            app:layout_constraintStart_toEndOf="@id/btn_offline_class"
+            app:layout_constraintTop_toBottomOf="@id/tv_online_class"
+            android:layout_marginTop="19dp"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/greyContainer"/>
+
+        <TextView
+            android:id="@+id/tv_building"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/montserrat_500"
+            android:text="Building"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_offline_class" />
+
+        <EditText
+            android:id="@+id/et_choose_building"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/button_container"
+            android:fontFamily="@font/montserrat_500"
+            android:hint="Choose Building"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/greyContainer"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_building" />
+
+        <Spinner
+            android:id="@+id/spinner_choose_building"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/chevron_down"
+            app:layout_constraintEnd_toEndOf="@id/et_choose_building"
+            app:layout_constraintTop_toTopOf="@id/et_choose_building" />
+
+        <TextView
+            android:id="@+id/tv_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/montserrat_500"
+            android:text="Room"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_choose_building" />
+
+        <EditText
+            android:id="@+id/et_choose_room"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/button_container"
+            android:fontFamily="@font/montserrat_500"
+            android:hint="Choose Room"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/greyContainer"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_room" />
+
+        <Spinner
+            android:id="@+id/spinner_choose_room"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/chevron_down"
+            app:layout_constraintEnd_toEndOf="@id/et_choose_room"
+            app:layout_constraintTop_toTopOf="@id/et_choose_room" />
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="49dp"
+            android:layout_height="28dp"
+            android:text="Save"
+            android:fontFamily="@font/montserrat_500"
+            android:textSize="12sp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/save_btn"
+            app:layout_constraintTop_toBottomOf="@id/et_choose_room"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toStartOf="@id/btn_no"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/btn_no"
+            android:layout_width="49dp"
+            android:layout_height="28dp"
+            android:text="No"
+            android:fontFamily="@font/montserrat_500"
+            android:textSize="12sp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_no_save"
+            app:layout_constraintTop_toBottomOf="@id/et_choose_room"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="27dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

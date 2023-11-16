@@ -13,4 +13,6 @@
     <color name="greyContainer">#D7D7D7</color>
     <color name="greyDark">#9F9F9F</color>
     <color name="blueButton">#2D85C5</color>
+    <color name="greenSave">#007D00</color>
+    <color name="greyBtn">#F7F9FC</color>
 </resources>
