@@ -13,10 +13,17 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
+<<<<<<<< HEAD:app/src/main/java/com/example/mytsuclassroom/AdministrationDiscipline.kt
+ * Use the [AdministrationDiscipline.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class AdministrationDiscipline : Fragment() {
+========
  * Use the [AddNewEducationDirectionFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
 class AddNewEducationDirectionFragment : Fragment() {
+>>>>>>>> origin/main:app/src/main/java/com/example/mytsuclassroom/AddNewEducationDirectionFragment.kt
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +41,11 @@ class AddNewEducationDirectionFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
+<<<<<<<< HEAD:app/src/main/java/com/example/mytsuclassroom/AdministrationDiscipline.kt
+        return inflater.inflate(R.layout.fragment_administration_discipline, container, false)
+========
         return inflater.inflate(R.layout.fragment_add_new_education_direction, container, false)
+>>>>>>>> origin/main:app/src/main/java/com/example/mytsuclassroom/AddNewEducationDirectionFragment.kt
     }
 
     companion object {
@@ -44,12 +55,20 @@ class AddNewEducationDirectionFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
+<<<<<<<< HEAD:app/src/main/java/com/example/mytsuclassroom/AdministrationDiscipline.kt
+         * @return A new instance of fragment AdministrationDiscipline.
+========
          * @return A new instance of fragment AddNewEducationDirectionFragment.
+>>>>>>>> origin/main:app/src/main/java/com/example/mytsuclassroom/AddNewEducationDirectionFragment.kt
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
+<<<<<<<< HEAD:app/src/main/java/com/example/mytsuclassroom/AdministrationDiscipline.kt
+            AdministrationDiscipline().apply {
+========
             AddNewEducationDirectionFragment().apply {
+>>>>>>>> origin/main:app/src/main/java/com/example/mytsuclassroom/AddNewEducationDirectionFragment.kt
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

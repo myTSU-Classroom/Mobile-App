@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="@id/ic_blue_line"
         android:layout_marginStart="28dp"
         android:layout_marginTop="23dp"/>
-    
+
     <EditText
         android:id="@+id/et_input_group_number"
         android:hint="Group Number"
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="27dp"
         android:background="@drawable/button_container"/>
-    
+
     <TextView
         android:id="@+id/btn_save"
         android:layout_width="49dp"
